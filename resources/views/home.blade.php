@@ -10,7 +10,9 @@
             <div class="card m-b-30">
                 <div class="card-body py-5">
                     <div class="row">
-                        
+                    <div class="col-lg-3 text-center">
+                            <img src="{{ getAvatar( isset(($contact['email']))?$contact['email']:'' ) }}" class="img-fluid mb-3 lozad" alt="user" />
+                        </div>
                         <div class="col-lg-9">
                             <h4>{{  isset(($contact['title']))?$contact['title']:'' }}  {{ isset(($contact['firstName']))?$contact['firstName']:'' }}  {{ isset(($contact['lastName']))?$contact['lastName']:'' }}</h4>
 
