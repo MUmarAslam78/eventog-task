@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+
+// Route::get('/getApiInfo', function(){
+//     dd("hello");
+// });
+
+Route::get('/', 'App\Http\Controllers\HomeController@getApiInfo')->name('pages.home');
