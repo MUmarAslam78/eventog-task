@@ -53,5 +53,13 @@
     @include('partials.header')
         @yield('content')
     @include('partials.footer')
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.27.0/feather.min.js" integrity="sha256-xHkYry2yRjy99N8axsS5UL/xLHghksrFOGKm9HvFZIs=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script>
+        const observer = lozad();
+        observer.observe();
+    </script>
 </body>
 </html>
